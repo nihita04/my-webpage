@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f4ff;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #6c63ff;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .card {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #6c63ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #5148e5;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>My first website hosted with GitHub Pages</p>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>About This Website</h2>
+            <p>
+                This webpage was created as part of my Bachelor of
+                Information Technology studies.
+            </p>
+
+            <p>
+                I am learning about HTML, CSS, JavaScript and cloud-based
+                software services.
+            </p>
+
+            <button onclick="showMessage()">Click Me!</button>
+
+            <p id="message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Nihita | 2026</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Thanks for visiting my webpage! 😊";
+        }
+    </script>
+
+</body>
+</html>
